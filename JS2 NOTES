@@ -1,0 +1,68 @@
+Functions
+  first define function
+  second call/invoke function
+  third console.log to view in the console
+  you can console.log an actual function
+      console.log(numPlusNum(6,8));
+
+        function orange (spaghetti, macaroni) {
+          return spaghetti + macaroni;
+        }
+
+        function orange (spaghetti, macaroni) {
+          return spaghetti + macaroni;
+          var sum;
+            sum = spaghetti + macaroni;
+        return sum;
+        }
+
+        console.log(orange(5, 10)):
+
+  scope -
+    declaring a variable inside of a function will console an Error
+    declaring a variable outside of function will allow the variable to be used in function
+
+
+Objects
+  groups information and is centered around one specific item
+  made up of key value pairs
+  values can be most anything
+  should ONLY be made up of the property and it's value
+  use curly brackets
+    inside the curly brackets, you don't use the object-dot-property syntax. Instead, you use "property-colon-value-comma" syntax.
+  use square brackets if you want to use a string .["string"] 
+    This allows for dynamic property look-up
+  use the equal sign = to define outside of brackets
+  you can overwrite values within an object
+
+    var tree + {
+    type: "dogwood"
+    }
+    tree.height = 5
+    tree.["age"] = "10 years"
+
+
+  you can call an array off of an object
+
+
+Arrays
+    basically giant lists
+    start at 0, not at 1
+    uses square brackets []
+    separate items by commas
+    var myArray = [joe, bob, dave];
+    can use .Commands on Arrays
+      myArray.join("") = will join all objects together
+      .push - takes value and adds to end of an array
+      .length - shows the number of items in an array
+
+
+    arrays & objects can nest inside each other to contain data in one place
+
+Window - everything in the entire browser
+
+iife - immediately invoked function
+  Use -  }());
+  use it to protect your code - wrap everything inside of an iife
+  it allows the code to stay just within a specific function, instead of overwriting the code outside of the function
+  as soon as we run this code and it hits a function, it will define it and run it at the same time
