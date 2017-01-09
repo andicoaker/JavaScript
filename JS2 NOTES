@@ -30,12 +30,12 @@ Objects
   should ONLY be made up of the property and it's value
   use curly brackets
     inside the curly brackets, you don't use the object-dot-property syntax. Instead, you use "property-colon-value-comma" syntax.
-  use square brackets if you want to use a string .["string"] 
+  use square brackets if you want to use a string .["string"]
     This allows for dynamic property look-up
   use the equal sign = to define outside of brackets
   you can overwrite values within an object
 
-    var tree + {
+    var = tree  {
     type: "dogwood"
     }
     tree.height = 5
@@ -66,3 +66,51 @@ iife - immediately invoked function
   use it to protect your code - wrap everything inside of an iife
   it allows the code to stay just within a specific function, instead of overwriting the code outside of the function
   as soon as we run this code and it hits a function, it will define it and run it at the same time
+
+
+HOMEWORK
+
+  function yell10 {
+    for(var i = 0; i < 10; i++){
+      yell(outerstring);
+    }
+  }
+
+  console.log(result);
+
+
+
+  // EXERCISE 3
+
+  //Write a function called longest that returns the longest of two input strings or arrays.
+
+  function longest(param1, param2) {
+    var lengthone = param1.length;
+    var lengthtwo = param2.length;
+
+    if(lengthone > lengthtwo) {
+      return param1;
+    } else if (lengthone < lengthtwo) {
+      return param2;
+    } else {
+      return "lengths are the same";
+    }
+  }
+
+
+
+  // EXERCISE 4
+
+  // Write a function called isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, uppercase or lowercase. The function should return false if the character is not a vowel.
+
+  function isVowel(oneChar) {
+    var vowelArray = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+
+    if(vowelArray.indexOf(oneChar) !== -1);
+
+    console.log(vowelArray.indexOf(oneChar));
+
+  }
+
+  isVowel('a');
+  isVowel('A');
